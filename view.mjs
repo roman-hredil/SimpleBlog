@@ -10,7 +10,7 @@ function escapeHTML(text){
 		.replaceAll("'", '&apos;')
 		.replaceAll('<', '&lt;')
 		.replaceAll('>', '&gt;')
-		.replaceAll('51', 'ТАЛОН'); // easter egg
+		.replaceAll(/\b51\b/g, 'ТАЛОН'); // easter egg
 }
 
 function fillPlaceholders(text, source){
