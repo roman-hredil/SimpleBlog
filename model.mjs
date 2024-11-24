@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://192.168.0.102:27017/test');
+mongoose.connect(process.env.MONGODB_ADDRESS);
 
 const postSchema = new mongoose.Schema({
 	title: {
