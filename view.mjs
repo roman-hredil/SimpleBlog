@@ -9,7 +9,8 @@ function escapeHTML(text){
 		.replaceAll('"', '&quot;')
 		.replaceAll("'", '&apos;')
 		.replaceAll('<', '&lt;')
-		.replaceAll('>', '&gt;');
+		.replaceAll('>', '&gt;')
+		.replaceAll('51', 'ТАЛОН'); // easter egg
 }
 
 function fillPlaceholders(text, source){
